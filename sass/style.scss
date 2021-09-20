@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap');
+
+:root {
+
+    --violet: #9356DC;
+    --pink: #FF79DA;
+    --green: #99E2D0;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    text-decoration: none;
+    list-style-type: none; 
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+/* header */
+.header{
+   display: block;
+
+   .header-title{
+    position: relative;
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.2);
+
+        h1{
+            padding: 1rem 0;
+            font-size: 2rem;
+            text-align: center;
+            letter-spacing: 1px;
+            font-family: 'Shrikhand', sans-serif;
+            }
+    }
+
+    .header-location{
+        text-align: center;
+        background: #F3F3F3;
+
+        h2{
+            color: rgba(0, 0, 0, 0.7);
+            font-size: 1.2rem;
+            padding: 1.3rem 0;
+            font-weight: 300;
+        }
+
+        i{
+            margin-right: 0.5rem;
+            color: rgba(0, 0, 0, 0.7);
+            font-size: 1.2rem;
+        }
+    }
+    
+    .header-description{
+        padding: 3rem 1rem 1.2rem 1rem;
+        background: rgba(243, 243, 243, 0.4);
+        text-align: center;
+
+        h2{
+            margin-bottom: 1.2rem;
+            font-size: 2rem;
+        }
+
+        h3{
+            margin-bottom: 1.2rem;
+            font-size: 1.1rem;
+            font-weight: 300;
+        }
+
+        div{
+            max-width: 327px;
+            margin: 0 auto;
+        }
+
+        a{
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #fff;
+            white-space: nowrap;
+            border-radius: 50px;
+            background: linear-gradient(var(--violet) 10%, var(--pink) 100%);
+            transition: all 0.5s linear;
+        }
+
+        a:hover{
+            transition: all 250ms linear;
+            opacity:0.8;
+            transform: scale(1);
+            box-shadow: 1px 3px 6px 1px rgba(5, 5, 5, 0.5);
+        }
+    
+    }
+    
+    .header-container{
+       
+        padding: 2rem 1rem;
+        margin: 2.5rem;
+
+        h3 {
+            margin-bottom: 3rem;
+            text-align: left;
+            font-size: 1.5rem;
+        }
+
+        .function{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-row-gap: 1rem;
+            justify-items: flex-start;
+
+            @media only screen and (min-width: 900px)
+             {
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: 1fr;
+                grid-column-gap: 3rem;
+                justify-items: center;
+            }
+
+            .choice{
+                display: flex;
+                align-items: baseline;
+                width: 100%;
+                white-space: nowrap;
+                padding: 25px 30px 25px 10px;
+                background: #F3F3F3;
+                border-radius: 20px;
+                box-shadow: 8px 8px 8px -7px #00000075;
+                transition: all 0.3s ease-in-out;
+                cursor: pointer;
+
+                &:hover{
+                    transition: all 250ms ease-in-out;
+                    background: rgba(147, 86, 220, 0.15);
+                    filter: saturate(100%);
+                    box-shadow: 1px 3px 6px 1px rgb(5 5 5 / 40%);
+                }
+
+                p{
+                    padding: 4px 9px;
+                    background: var(--violet);
+                    border-radius: 50%;
+                    color: white;
+                    transform: translateX(-18px) translateY(1px);
+                }
+
+                i{
+                    margin-right: 1rem;
+                    font-size: 13px;
+                    margin-top: 0.5rem;
+                    color: rgba(0, 0, 0, 0.397);
+                }
+
+                span{
+                    opacity: 0.7;
+                    font-weight: bold;
+                }
+                
+            }
+        }
+    }
+   
+}
