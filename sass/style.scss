@@ -323,11 +323,22 @@ main{
             color: #333;
           }
 
-           .fas.fa-heart {
+           .far.fa-heart {
+             background: #333;
               font-size: 22px;
               opacity: 1;
               transition: 0.2s ease-out;
-              &:hover {color: red;}
+
+              &:hover {
+                animation:  0.3s ease-in-out;
+                display: inline-block;
+                opacity: 1;
+                background: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+                background: -webkit-linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                font-weight: bold;
+              }
           }
         }
 
