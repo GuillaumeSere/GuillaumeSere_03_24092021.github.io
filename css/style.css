@@ -27,8 +27,8 @@ body {
   left: 0;
   top: 0;
   background-color: rgba(255, 255, 255, 0.9);
-  animation: loader 0.03s;
-  animation-delay: 1.75s;
+  animation: loader 0.05s;
+  animation-delay: 2.45s;
   animation-fill-mode: both;
   z-index: 10000;
   display: flex;
@@ -45,19 +45,20 @@ body {
   justify-content: center;
   padding-top: 120px;
   border: solid 4px var(--pink);
+  opacity: 0.8;
   border-radius: 30px;
-  box-shadow: 1px 3px 6px 1px #9c9c9c;
+  box-shadow: 10px 30px 10px 10px #9c9c9c;
 }
 .loader__item {
   height: 40px;
   width: 40px;
   border-radius: 50%;
-  animation: move 1s;
+  animation: move 1.55s;
   animation-iteration-count: 1;
 }
 .loader__itemContainer {
   display: flex;
-  width: 20%;
+  width: 30%;
   justify-content: space-around;
 }
 .loader__item--1 {
@@ -96,11 +97,9 @@ body {
 .header {
   display: block;
 }
-.header .header-title {
+.header h1 {
   position: relative;
   box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.2);
-}
-.header .header-title h1 {
   padding: 1rem 0;
   font-size: 2rem;
   text-align: center;
@@ -112,7 +111,7 @@ body {
   background: #F3F3F3;
 }
 .header .header-location h2 {
-  color: rgba(0, 0, 0, 0.7);
+  color: rgba(0, 0, 0, 0.9);
   font-size: 1.2rem;
   padding: 1.3rem 0;
   font-weight: 300;
@@ -136,10 +135,6 @@ body {
   font-size: 1.1rem;
   font-weight: 300;
 }
-.header .header-description div {
-  max-width: 327px;
-  margin: 0 auto;
-}
 .header .header-description a {
   display: inline-block;
   padding: 15px 30px;
@@ -157,23 +152,34 @@ body {
   transform: scale(1);
   box-shadow: 1px 3px 6px 1px rgba(5, 5, 5, 0.5);
 }
-.header .header-container {
+
+/* section restaurants */
+main {
+  display: block;
+}
+
+.restaurants {
+  background: #f6f6f6;
+  padding: 2rem 1rem;
+}
+.restaurants .header-container {
   padding: 2rem;
   margin: 2rem;
 }
-.header .header-container h3 {
+.restaurants .header-container h3 {
   margin-bottom: 3rem;
   text-align: left;
   font-size: 1.5rem;
+  font-weight: bolder;
 }
-.header .header-container .function {
+.restaurants .header-container .function {
   display: grid;
   grid-template-columns: 1fr;
   grid-row-gap: 1rem;
   justify-items: flex-start;
 }
-@media only screen and (min-width: 950px) {
-  .header .header-container .function {
+@media only screen and (min-width: 991px) {
+  .restaurants .header-container .function {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
     grid-column-gap: 3rem;
@@ -181,40 +187,81 @@ body {
     padding-right: 10px;
   }
 }
-.header .header-container .function .choice {
+.restaurants .header-container .function .choice {
   display: flex;
   align-items: baseline;
   width: 100%;
   white-space: nowrap;
-  padding: 25px 30px 25px 10px;
+  padding: 20px 20px 20px 20px;
   background: #F3F3F3;
   border-radius: 20px;
   box-shadow: 8px 8px 8px -7px #00000075;
   transition: all 0.3s ease-in-out;
   cursor: pointer;
 }
-.header .header-container .function .choice:hover {
+.restaurants .header-container .function .choice:hover {
   transition: all 250ms ease-in-out;
   background: rgba(147, 86, 220, 0.15);
   filter: saturate(100%);
   box-shadow: 1px 3px 6px 1px #9c9c9c;
 }
-.header .header-container .function .choice p {
+.restaurants .header-container .function .choice p {
+  margin-left: -17px;
   padding: 4px 9px;
   background: var(--violet);
   border-radius: 50%;
   color: white;
   transform: translateX(-18px) translateY(1px);
 }
-.header .header-container .function .choice i {
+.restaurants .header-container .function .choice i {
   margin-right: 1rem;
-  font-size: 13px;
+  font-size: 16px;
   margin-top: 0.5rem;
   color: rgba(0, 0, 0, 0.397);
 }
-.header .header-container .function .choice span {
+.restaurants .header-container .function .choice span {
   opacity: 0.7;
   font-weight: bold;
+}
+.restaurants .container {
+  max-width: 1280px;
+  margin: 2rem;
+  padding: 2rem;
+  position: relative;
+}
+.restaurants .container h2 {
+  display: block;
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+.restaurants .container .box-cards {
+  display: grid;
+  column-gap: 2rem;
+  row-gap: 2rem;
+}
+@media (min-width: 64rem) {
+  .restaurants .container .box-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.restaurants .container .box-cards a {
+  display: inline-block;
+  cursor: pointer;
+}
+.restaurants .container .box-cards a img {
+  height: 12rem;
+  width: 100%;
+  border-radius: 1rem 1rem 0 0;
+  object-fit: cover;
+}
+.restaurants .container .box-cards a span {
+  display: flex;
+  justify-content: initial;
+  background: var(--green);
+  color: #1b6150;
+  padding: 0.5rem;
+  border-radius: 0.05rem;
 }
 
 /*# sourceMappingURL=style.css.map */

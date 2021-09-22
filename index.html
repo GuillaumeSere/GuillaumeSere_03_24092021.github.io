@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="shortcut icon" href="images/logo/ohmyfood@2x.svg" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <title>ohmyfood</title>
 </head>
@@ -12,20 +13,20 @@
 
     <!-- section loader -->
     <div class="loader">
+
              <h1>ohmyfood</h1>
+
         <div class="loader__itemContainer">
           <div class="loader__item loader__item--1"></div>
           <div class="loader__item loader__item--2"></div>
           <div class="loader__item loader__item--3"></div>
         </div>
-      </div>
+    </div>
 
     <!-- section header -->
     <header class="header">
 
-        <div class="header-title">
             <h1>ohmyfood</h1>
-        </div>
 
         <div class="header-location">
             <h2><i class="fas fa-map-marker-alt"></i> Paris, Belleville</h2>
@@ -34,26 +35,32 @@
         <div class="header-description">
             <h2>Réservez le menu qui vous convient</h2>
             <h3>Découvrez des restaurants d'exception, sélectionnés par nos soins</h3>
-            <div>
-                <a href="#main">Explorer nos restaurants</a>
-            </div>
-        </div>
+        <div>
+
+            <a href="#restaurants">Explorer nos restaurants</a>
+
+    </header>
+
+<main>
+
+    <section class="restaurants" id="restaurants">
 
         <div class="header-container">
             <h3>Fonctionnement</h3>
             <div class="function">
+    
                 <div class="choice">
                     <p>1</p>
                     <i class="fas fa-mobile-alt"></i>
                     <span>Choisissez un restaurant</span>
                 </div>
-
+    
                 <div class="choice">
                     <p>2</p>
                     <i class="fas fa-list-ul"></i>
                     <span>Composez votre menu</span>
                 </div>
-
+    
                 <div class="choice">
                     <p>3</p>
                     <i class="fas fa-store"></i>
@@ -62,7 +69,24 @@
             </div>
         </div>
 
-    </header>
+        <div class="container">
+            <h2>Restaurants</h2>
+            <div class="box-cards">
+                <a href="/la-palette-du-gout.html">
+                    <img src="/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="image restaurant">
+                    <span>Nouveau</span>
+                    <div class="description">
+                        <h2>La palette du goût</h2>
+                        <p>Ménilmontant</p>
+                        <i class="fa-heart fas menu"></i>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+    </section>
+
+</main>
    
 
 </body>
