@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
 :root {
@@ -112,6 +113,11 @@ body {
   font-size: 1.5rem;
   font-weight: bold;
 }
+@media (max-width: 450px) {
+  .header .header-container h4 {
+    margin-left: -50px;
+  }
+}
 .header .header-container .function {
   display: grid;
   grid-template-columns: 1fr;
@@ -184,7 +190,6 @@ body {
   color: rgba(0, 0, 0, 0.9);
   font-size: 1.2rem;
   padding: 1.3rem 0;
-  font-weight: 300;
 }
 .header .header-location i {
   margin-right: 0.5rem;
@@ -231,6 +236,7 @@ body {
   flex-wrap: wrap;
   background: #F3F3F3;
   padding-top: 50px;
+  padding-bottom: 50px;
 }
 .restaurants h2 {
   margin-left: 100px;
@@ -330,6 +336,7 @@ body {
   color: #333;
 }
 .restaurants .container .box-cards a .description .far.fa-heart {
+  color: #333;
   font-size: 22px;
   opacity: 1;
   transition: 0.2s ease-out;
@@ -343,6 +350,51 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
+}
+
+/*  sectiçn footer */
+.footer {
+  padding-left: 50px;
+  background: #353535;
+  height: 240px;
+  display: flex;
+  flex-direction: column;
+}
+.footer h4 {
+  color: #fff;
+  font-family: "Shrikhand", sans-serif;
+  font-size: 22px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  padding-top: 30px;
+}
+.footer .footer-container {
+  margin-top: 20px;
+  color: #fff;
+}
+.footer .footer-container a {
+  display: flex;
+  color: #fff;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+.footer .footer-container a:hover {
+  color: var(--pink);
+}
+.footer .footer-container .footer-info {
+  padding-bottom: 10px;
+}
+.footer .footer-container .footer-info i {
+  color: #fff;
+}
+.footer .footer-container .footer-info i:hover {
+  color: var(--pink);
+}
+.footer .footer-container .footer-info i span {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  margin-left: 15px;
+  font-weight: 400;
 }
 
 /*# sourceMappingURL=style.css.map */
