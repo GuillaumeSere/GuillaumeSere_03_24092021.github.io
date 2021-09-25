@@ -455,6 +455,10 @@ body{
   display: flex;
   justify-content: center;
 
+  a{
+    color: black;
+  }
+
   h1{
     position: relative;
     padding: 1rem 0;
@@ -530,6 +534,10 @@ body{
     grid-template-columns: repeat(3,1fr);
     column-gap: 1rem;
 
+    @media (max-width:1180px){
+      grid-template-columns: repeat(1,1fr);
+    }
+
     .menu{
       max-width: 100%;
       overflow: hidden;
@@ -562,20 +570,57 @@ body{
           box-shadow: 0.25rem 0.25rem 1rem rgb(0 0 0 / 10%);
           overflow: hidden;
           cursor: pointer;
-          animation: itemshow .6s;
+          animation: itemshow 2000ms forwards;
           animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
           animation-fill-mode: both;
           max-width: 100%;
-          transform: scale(0);
+
+          .menu-item .start-1{
+            animation-delay: 200ms;
+          }
+
+          .menu-item .start-2{
+            animation-delay: 400ms;
+          }
+
+          .menu-item .start-3{
+            animation-delay: 600ms;
+          }
+
+          .menu-item .start-4{
+            animation-delay: 800ms;
+          }
+
+          .menu-item .start-5{
+            animation-delay: 900ms;
+          }
+
+          .menu-item .start-6{
+            animation-delay: 1000ms;
+          }
+
+          .menu-item .start-7{
+            animation-delay: 1200ms;
+          }
+
+          .menu-item .start-8{
+            animation-delay: 1400ms;
+          }
+
+          .menu-item .start-9{
+            animation-delay: 1600ms;
+          }
 
 
           @keyframes itemshow{
 
             0%{
-              transform: scale(0);
+              opacity: 0;
+              transform: translateY(2em);
             }
             100%{
-              transform: scale(1);
+              opacity: 1;
+              transform: translateY(0);
             }
           }
 
@@ -605,7 +650,7 @@ body{
             transition-duration: .5s;
 
             &:hover{
-              margin-right: -1rem -1rem -1rem -1rem;
+              margin-right: -16px;
             }
       
             .icon{
