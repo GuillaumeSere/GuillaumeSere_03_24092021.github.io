@@ -1,5 +1,7 @@
 # GuillaumeSere_03_24092021.github.io
 
+![jay-wennington-N_Y88TWmGwA-unsplash](https://user-images.githubusercontent.com/75996200/134817825-f9993873-145f-40e2-a4c1-5d0445a77a4e.jpg)
+
 # Scénario
 Vous venez d’être recruté chez Ohmyfood!, en tant que développeur junior. Félicitations !
 
