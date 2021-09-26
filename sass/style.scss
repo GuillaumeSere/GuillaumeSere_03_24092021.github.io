@@ -369,7 +369,7 @@ body{
 
            .far.fa-heart {
              color: #333;
-              font-size: 22px;
+              font-size: 26px;
               opacity: 1;
               transition: 0.2s ease-out;
 
@@ -507,14 +507,16 @@ body{
       font-family: 'Shrikhand',"cursive";
       font-size: 26px;
       padding-top: 1rem;
+      font-weight: 500;
     }
 
     .far.fa-heart {
-      cursor: pointer;
-      color: #333;
-       font-size: 22px;
-       opacity: 1;
-       transition: 0.2s ease-out;
+        margin-top:15px ;
+        cursor: pointer;
+        color: #333;
+        font-size: 26px;
+        opacity: 1;
+        transition: 0.2s ease-out;
 
        &:hover {
          animation:  0.3s ease-in-out;
@@ -554,7 +556,7 @@ body{
           content: "";
           width: 3rem;
           height: .25rem;
-          background-color: #99e2d0;
+          background-color: var(--green);
           position: absolute;
           left: 0;
           bottom: 0;
@@ -570,44 +572,52 @@ body{
           box-shadow: 0.25rem 0.25rem 1rem rgb(0 0 0 / 10%);
           overflow: hidden;
           cursor: pointer;
-          animation: itemshow 2000ms forwards;
+          animation: itemshow 4.5s forwards;
           animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
           animation-fill-mode: both;
           max-width: 100%;
+          
+          &:hover :nth-child(3){
+            margin-right: -16px;
 
-          .menu-item .start-1{
+            :nth-child(1){
+              transform: rotate(360deg);
+            }
+          }
+
+         .start-1{
             animation-delay: 200ms;
           }
 
-          .menu-item .start-2{
+          .start-2{
             animation-delay: 400ms;
           }
 
-          .menu-item .start-3{
+          .start-3{
             animation-delay: 600ms;
           }
 
-          .menu-item .start-4{
+          .start-4{
             animation-delay: 800ms;
           }
 
-          .menu-item .start-5{
+          .start-5{
             animation-delay: 900ms;
           }
 
-          .menu-item .start-6{
+          .start-6{
             animation-delay: 1000ms;
           }
 
-          .menu-item .start-7{
+         .start-7{
             animation-delay: 1200ms;
           }
 
-          .menu-item .start-8{
+           .start-8{
             animation-delay: 1400ms;
           }
 
-          .menu-item .start-9{
+          .start-9{
             animation-delay: 1600ms;
           }
 
@@ -616,7 +626,7 @@ body{
 
             0%{
               opacity: 0;
-              transform: translateY(2em);
+              transform: translateY(2rem);
             }
             100%{
               opacity: 1;
@@ -630,8 +640,18 @@ body{
             text-overflow: ellipsis;
             overflow: hidden;
             flex: 1;
-          }
 
+            p{
+              margin-top: 5px;
+            }
+        
+          @media (max-width:410px){
+
+            p{
+              font-size: 14px;
+            }
+          }
+        }  
           .price{
             font-weight: 700;
             display: flex;
@@ -641,7 +661,9 @@ body{
           }
 
           .ckecked{
-            background-color: #99e2d0;
+            position: relative;
+            background-color:var(--green);
+            color: var(--green);
             margin: -1rem -5rem -1rem 1rem;
             width: 4rem;
             display: flex;
@@ -649,11 +671,8 @@ body{
             justify-content: center;
             transition-duration: .5s;
 
-            &:hover{
-              margin-right: -16px;
-            }
-      
             .icon{
+              overflow: hidden;
               height: 1.6rem;
               width: 1.6rem;
               background-color: #fff;
@@ -661,17 +680,8 @@ body{
               align-items: center;
               justify-content: center;
               border-radius: 100px;
-              transform: rotate(180deg);
               transition-duration: .5s;
-      
-              .fas{
-                -webkit-font-smoothing: antialiased;
-                display: inline-block;
-                font-style: normal;
-                font-variant: normal;
-                text-rendering: auto;
-                line-height: 1;
-              }
+             
             }
           }
         
@@ -689,6 +699,7 @@ body{
   padding: 3rem 0;
 
   .btn{
+    width:180px;
     border: 0;
     padding: .75rem 1.5rem;
     font-weight: 500;
