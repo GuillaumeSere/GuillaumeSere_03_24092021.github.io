@@ -1,6 +1,6 @@
 # GuillaumeSere_03_24092021.github.io
 
-Scénario
+# Scénario
 Vous venez d’être recruté chez Ohmyfood!, en tant que développeur junior. Félicitations !
 
 Ohmyfood! est une jeune startup qui voudrait s'imposer sur le marché de la restauration. L'objectif est de développer un site 100% mobile qui répertorie les menus de restaurants gastronomiques. En plus des systèmes classiques de réservation, les clients pourront composer le menu de leur repas pour que les plats soient prêts à leur arrivée. Finis, les temps d'attente au restaurant !
@@ -9,7 +9,7 @@ Ohmyfood! est une jeune startup qui voudrait s'imposer sur le marché de la rest
 
 Vous faites partie des 4 heureux élus qui ont la chance de travailler sur ce beau projet.
 
-L’équipe se compose de :
+# L’équipe se compose de :
 
 Paul, le CTO du futur site ;
 Fanny, l’UX designer recrutée pour mettre le site aux couleurs de Paris ;
@@ -32,7 +32,7 @@ Vous trouvez les maquettes du site dans votre boîte mail, envoyées par Fanny.
 Vous avez désormais tous les éléments pour construire ce site mobile. Vous vous lancez dans cette nouvelle aventure !
 
 
-Livrables
+# Livrables
 Un lien vers votre repository GitHub
 Un lien vers la page web du site
 L'intégration d'images issues des maquettes ne sera pas acceptée : vous devez recréer les éléments de zéro (titres, texte...).
@@ -41,7 +41,7 @@ Pour faciliter votre passage au jury, déposez sur la plateforme, dans un dossie
 
 Le repo GitHub doit être nommé avec la convention suivante : Nomcomplet_#_Datedémarrage. Le # correspond au numéro du projet sur le parcours et la date doit être au format jjmmaaaa. Par exemple, FrancoisLenotre_3_05032020.
 
-Soutenance
+# Soutenance
 La soutenance, d'une durée de 30 minutes,  se déroule en 3 étapes :
 
 Dans un premier temps, un évaluateur jouera le rôle de Paul, votre CTO. Vous lui expliquerez vos choix techniques concernant la conception du site. (15 minutes)
