@@ -100,6 +100,9 @@ body {
 }
 
 /* header */
+.header .header-bg {
+  background: #F3F3F3;
+}
 .header .header-container {
   padding: 2rem;
   margin: 2rem;
@@ -181,7 +184,7 @@ body {
 }
 .header .header-location {
   text-align: center;
-  background: #F3F3F3;
+  background: #eeeded;
 }
 .header .header-location h2 {
   color: rgba(0, 0, 0, 0.9);
@@ -203,7 +206,7 @@ body {
   font-size: 24px;
 }
 .header .header-description h3 {
-  margin-bottom: 1.2rem;
+  margin-bottom: -2rem;
   font-size: 1.1rem;
   font-weight: 300;
   padding-right: 10px;
@@ -606,9 +609,9 @@ body {
   padding: 3rem 0;
 }
 .command .btn {
-  width: 180px;
+  min-width: 180px;
   border: 0;
-  padding: 0.75rem 1.5rem;
+  padding: 1rem 1.5rem;
   font-weight: 500;
   font-size: 1.1rem;
   border-radius: 100px;
