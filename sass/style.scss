@@ -214,10 +214,14 @@ body{
             position: relative;
             box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.2);
             padding: 1rem 0;
-            font-size: 2rem;
+            font-size: 4rem;
             text-align: center;
             letter-spacing: 1px;
             font-family: 'Shrikhand', sans-serif;
+
+            @media (max-width:991px){
+              font-size: 2rem;
+            }
             }
 
     .header-location{
@@ -479,10 +483,14 @@ body{
   h1{
     position: relative;
     padding: 1rem 0;
-    font-size: 2rem;
+    font-size: 4rem;
     text-align: center;
     letter-spacing: 1px;
     font-family: 'Shrikhand', sans-serif;
+
+    @media (max-width:991px){
+      font-size: 2rem;
+    }
     }
 
   .fa-sm{
@@ -560,7 +568,7 @@ body{
     .menu{
       max-width: 100%;
       overflow: hidden;
-      padding: 1.5rem 1rem;
+      padding: .5rem 1rem;
 
       h3{
         margin-bottom: -1rem;
