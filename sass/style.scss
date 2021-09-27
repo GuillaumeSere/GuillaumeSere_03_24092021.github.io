@@ -23,7 +23,7 @@ body{
 }
 
 ::-webkit-scrollbar{
-  width: 8px;
+  width: 12px;
 }
 
 ::-webkit-scrollbar-track{
@@ -31,7 +31,7 @@ body{
 }
 
 ::-webkit-scrollbar-thumb{
-  background: #333;
+  background: rgb(184, 184, 184);
   border-radius: 25px;
 }
 
@@ -518,7 +518,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem 2rem 2rem 1rem;
+    padding: 1rem 2rem 1rem 1rem;
 
     h2{
       font-family: 'Shrikhand',"cursive";
@@ -560,9 +560,10 @@ body{
     .menu{
       max-width: 100%;
       overflow: hidden;
-      padding: 0 1rem;
+      padding: 1.5rem 1rem;
 
       h3{
+        margin-bottom: -1rem;
         position: relative;
         text-transform: uppercase;
         font-size: 20px;
@@ -580,74 +581,37 @@ body{
         }
       } 
 
+      @keyframes itemshow{
+
+        0%{
+          opacity: 0;
+          transform: translateY(0.5rem);
+        }
+        100%{
+          opacity: 1;
+          transform: translateY(1rem);
+        }
+      }
+
         .menu-item{
           background-color: #fff;
           padding: 1rem;
           display: flex;
           border-radius: .75rem;
           margin: 1rem 0;
-          box-shadow: 0.25rem 0.25rem 1rem rgb(0 0 0 / 10%);
+          box-shadow: 0.25rem 0.25rem 1rem rgb(0 0 0 / 8%);
           overflow: hidden;
           cursor: pointer;
           animation: itemshow 4.5s forwards;
           animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
           animation-fill-mode: both;
           max-width: 100%;
-          
+
           &:hover :nth-child(3){
             margin-right: -16px;
 
             :nth-child(1){
               transform: rotate(360deg);
-            }
-          }
-
-         .start-1{
-            animation-delay: 200ms;
-          }
-
-          .start-2{
-            animation-delay: 400ms;
-          }
-
-          .start-3{
-            animation-delay: 600ms;
-          }
-
-          .start-4{
-            animation-delay: 800ms;
-          }
-
-          .start-5{
-            animation-delay: 900ms;
-          }
-
-          .start-6{
-            animation-delay: 1000ms;
-          }
-
-         .start-7{
-            animation-delay: 1200ms;
-          }
-
-           .start-8{
-            animation-delay: 1400ms;
-          }
-
-          .start-9{
-            animation-delay: 1600ms;
-          }
-
-
-          @keyframes itemshow{
-
-            0%{
-              opacity: 0;
-              transform: translateY(2rem);
-            }
-            100%{
-              opacity: 1;
-              transform: translateY(0);
             }
           }
 
