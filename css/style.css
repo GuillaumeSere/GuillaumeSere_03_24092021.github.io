@@ -257,7 +257,7 @@ body {
   padding-bottom: 50px;
 }
 .restaurants h2 {
-  margin-left: 100px;
+  margin-left: 150px;
   font-size: 26px;
   font-weight: bold;
 }
@@ -384,16 +384,35 @@ body {
   flex-direction: column;
 }
 .footer h4 {
+  text-align: center;
   color: #fff;
   font-family: "Shrikhand", sans-serif;
-  font-size: 22px;
+  font-size: 35px;
   font-weight: 300;
   letter-spacing: 1px;
   padding-top: 30px;
 }
+@media (max-width: 991px) {
+  .footer h4 {
+    font-size: 22px;
+    text-align: left;
+  }
+}
 .footer .footer-container {
+  padding-top: 40px;
+  display: flex;
   margin-top: 20px;
   color: #fff;
+  justify-content: space-around;
+}
+@media (max-width: 991px) {
+  .footer .footer-container {
+    display: grid;
+    padding-top: 0;
+    margin-top: 20px;
+    color: #fff;
+    justify-content: left;
+  }
 }
 .footer .footer-container a {
   display: flex;
