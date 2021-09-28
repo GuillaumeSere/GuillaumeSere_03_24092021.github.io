@@ -462,10 +462,16 @@ body {
   }
 }
 .header-restaurant .fa-sm {
-  font-size: 20px;
+  font-size: 30px;
   position: absolute;
-  top: 30px;
+  top: 50px;
   left: 30px;
+}
+@media (max-width: 991px) {
+  .header-restaurant .fa-sm {
+    top: 30px;
+    font-size: 20px;
+  }
 }
 
 /* section banner */
