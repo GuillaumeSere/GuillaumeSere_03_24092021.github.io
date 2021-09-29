@@ -334,7 +334,7 @@ body{
       }
 
       &:hover{
-        transition: all 0.2s ease-in;
+        transition: all 0.2s ease-in-out;
         transform: scale(1.01);
         box-shadow: 4px 4px 7px 4px rgb(180, 180, 180);
       }
@@ -352,7 +352,7 @@ body{
           background: var(--green);
           color: #1b6150;
           padding: .5rem;
-          border-radius: .05rem;
+          border-radius: .2rem;
         } 
         
         img{
@@ -405,6 +405,7 @@ body{
                 opacity: 1;
                 background: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
                 background: -webkit-linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+                background-clip: border-box;
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
                 font-weight: bold;
@@ -581,6 +582,7 @@ body{
          opacity: 1;
          background: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
          background: -webkit-linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+         background-clip: border-box;
          -webkit-background-clip: text;
          -webkit-text-fill-color: transparent;
          font-weight: bold;
