@@ -531,7 +531,6 @@ body {
 .box-container .box-menu {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  column-gap: 1rem;
 }
 @media (max-width: 1180px) {
   .box-container .box-menu {
@@ -594,6 +593,10 @@ body {
   text-overflow: ellipsis;
   overflow: hidden;
   flex: 1;
+}
+.box-container .box-menu .menu .menu-item .menu-description h4 {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .box-container .box-menu .menu .menu-item .menu-description p {
   overflow: hidden;
