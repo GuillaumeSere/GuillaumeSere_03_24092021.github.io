@@ -99,6 +99,7 @@ body{
       }
     }
   
+    /* animations keyframes */
 
   @keyframes loader {
     100% {
@@ -120,6 +121,15 @@ body{
     100% {
       transform: translateY(-1rem);
     }
+  }
+}
+
+@keyframes spin01{
+  0%{
+      transform:rotate(0deg);
+  }
+  100%{
+      transform: rotate(360deg);
   }
 }
 
@@ -179,6 +189,10 @@ body{
                 background: rgba(147, 86, 220, 0.15);
                 filter: saturate(100%);
                 box-shadow: 1px 3px 6px 1px rgb(156, 156, 156);
+
+                &:hover :nth-child(2){
+                  color: var(--violet);
+                }
             }
 
             p{
@@ -195,10 +209,6 @@ body{
                 font-size: 16px;
                 margin-top: 0.5rem;
                 color: rgba(0, 0, 0, 0.397);
-
-                &:hover{
-                  color: var(--violet);
-                }
             }
 
             span{
@@ -333,7 +343,7 @@ body{
       }
 
       &:hover{
-        transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in;
         transform: scale(1.01);
         box-shadow: 4px 4px 7px 4px rgb(180, 180, 180);
       }
