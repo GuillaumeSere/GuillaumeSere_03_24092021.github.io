@@ -61,7 +61,7 @@ body{
         display: flex;
         justify-content: center;
         padding-top: 120px;
-        border: solid 4px var(--pink);
+        border: solid 8px var(--pink);
         opacity: 0.8;
         border-radius: 30px;
         box-shadow: 10px 30px 10px 10px rgb(156, 156, 156);
@@ -121,15 +121,6 @@ body{
     100% {
       transform: translateY(-1rem);
     }
-  }
-}
-
-@keyframes spin01{
-  0%{
-      transform:rotate(0deg);
-  }
-  100%{
-      transform: rotate(360deg);
   }
 }
 
@@ -652,9 +643,8 @@ body{
           overflow: hidden;
           cursor: pointer;
           animation: itemshow 4.5s forwards;
-          animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
-          animation-fill-mode: both;
           max-width: 100%;
+
 
           &:hover :nth-child(3){
             margin-right: -16px;
@@ -672,6 +662,8 @@ body{
             flex: 1;
 
             p{
+              overflow: hidden;
+              text-overflow:ellipsis;
               margin-top: 5px;
             }
         
@@ -679,7 +671,10 @@ body{
 
             p{
               font-size: 14px;
+              margin-right: -1rem;
+              padding-right: 1rem;
             }
+            
           }
         }  
           .price{
