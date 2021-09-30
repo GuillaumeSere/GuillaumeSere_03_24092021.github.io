@@ -293,7 +293,7 @@ body {
 }
 @media (max-width: 1089px) {
   .restaurants .container .box-cards {
-    width: 400px;
+    width: 90%;
     height: 300px;
   }
 }
