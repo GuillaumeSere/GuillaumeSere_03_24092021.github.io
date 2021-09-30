@@ -117,6 +117,22 @@ body {
 .header .header-bg {
   background: #F3F3F3;
 }
+.header .header-bg .header-description {
+  padding: 3rem 1rem 1.2rem 1rem;
+  background: rgba(243, 243, 243, 0.4);
+  text-align: center;
+}
+.header .header-bg .header-description h2 {
+  margin-bottom: 1.2rem;
+  font-size: 24px;
+}
+.header .header-bg .header-description h3 {
+  margin-bottom: -2rem;
+  font-size: 1.1rem;
+  font-weight: 300;
+  padding-right: 10px;
+  padding-left: 10px;
+}
 .header .header-container {
   padding: 2rem;
   margin: 2rem;
@@ -202,34 +218,30 @@ body {
   }
 }
 .header .header-location {
-  text-align: center;
+  padding-left: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: #eeeded;
+  color: black;
 }
-.header .header-location h2 {
-  color: rgba(0, 0, 0, 0.9);
-  font-size: 1.2rem;
-  padding: 1.3rem 0;
+.header .header-location input {
+  background: rgba(243, 243, 243, 0.4);
+  padding: 1.5rem 0;
+  border: none;
+}
+.header .header-location input::placeholder {
+  font-size: 18px;
+  font-weight: 600;
+  color: black;
+}
+.header .header-location input:focus {
+  outline: none;
 }
 .header .header-location i {
   margin-right: 0.5rem;
   color: rgba(0, 0, 0, 0.7);
-  font-size: 1.2rem;
-}
-.header .header-description {
-  padding: 3rem 1rem 1.2rem 1rem;
-  background: rgba(243, 243, 243, 0.4);
-  text-align: center;
-}
-.header .header-description h2 {
-  margin-bottom: 1.2rem;
-  font-size: 24px;
-}
-.header .header-description h3 {
-  margin-bottom: -2rem;
-  font-size: 1.1rem;
-  font-weight: 300;
-  padding-right: 10px;
-  padding-left: 10px;
+  font-size: 1.3rem;
 }
 
 /* section restaurants */
