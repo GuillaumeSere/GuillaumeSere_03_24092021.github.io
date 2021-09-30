@@ -66,7 +66,7 @@ body {
 }
 @media (max-width: 450px) {
   .loader h1 {
-    font-size: 30px;
+    font-size: 26px;
   }
 }
 .loader__item {
@@ -80,6 +80,11 @@ body {
   display: flex;
   width: 30%;
   justify-content: space-around;
+}
+@media (max-width: 450px) {
+  .loader__itemContainer {
+    width: 40%;
+  }
 }
 .loader__item--1 {
   background-color: var(--green);
@@ -218,7 +223,7 @@ body {
   }
 }
 .header .header-location {
-  padding-left: 3rem;
+  padding-left: 5rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -228,7 +233,10 @@ body {
 .header .header-location input {
   background: rgba(243, 243, 243, 0.4);
   padding: 1.5rem 0;
+  font-size: 18px;
+  font-weight: 600;
   border: none;
+  cursor: pointer;
 }
 .header .header-location input::placeholder {
   font-size: 18px;
