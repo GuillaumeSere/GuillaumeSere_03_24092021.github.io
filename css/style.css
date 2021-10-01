@@ -543,6 +543,7 @@ body {
   }
 }
 .box-container .box-menu .menu {
+  margin-top: 1rem;
   max-width: 100%;
   overflow: hidden;
   padding: 0.5rem 1rem;
